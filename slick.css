@@ -1,0 +1,96 @@
+  .images {
+    position: relative;
+  }
+  .nav-item{
+    margin-right:15px;
+    font-size:15px;
+  }
+  .nav-item .nav-link:hover{
+    border-bottom:4px solid #0dace6d7;
+    animation: none;
+  }
+  .content {
+    position:absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    transform: translateY(-50%);
+  }
+  .content h1,p,button{
+    color: #fff;
+  }
+  .content h1{
+    font-size:84pt;
+  }
+  .content p{
+    font-size:24pt;
+  }
+  .content button{
+    background-color:transparent;
+    border:transparent;
+    border: 1px solid #fff;
+    padding:12px 38px 12px 38px;
+    font-size: 20px;
+    border-radius:7px;
+  }
+  .row{
+    text-align:center;
+  }
+  .service img{
+    margin-top:60px;
+    margin-bottom:20px;
+  }
+  .service h2{
+    margin-top:10px;
+    margin-bottom:5px;
+  }
+  .service button{
+    margin-top:20px;
+    margin-bottom:60px;
+    font-size:15px;
+    color: #fff;
+    padding: 5px 25px 5px 25px;
+    background-color: #0dace6d7;
+    border:1px solid #fff;
+    border-radius:5px;
+  }
+  .gallery-title{
+    margin-top:30px;
+    margin-bottom:50px;
+    font-size:45px;
+  }
+  .img-responsive{
+    margin-bottom:40px;
+  }
+  .work{
+    margin-left:45%;
+    margin-right:45%;
+  }
+  .work button{
+    margin-top:20px;
+    margin-bottom:60px;
+    font-size:15px;
+    color: #fff;
+    padding: 5px 25px 5px 25px;
+    background-color: #0dace6d7;
+    border:1px solid #fff;
+    border-radius:5px;
+    
+  }
+  .mates h4{
+    margin-top:50px;
+    margin-bottom:10px;
+  }
+  .mates img{
+    height:240px;
+    width:240px;
+    clip-path:circle();
+  }
+  .mates h5{
+    margin-bottom:30px;
+  }
+  .mates p{
+    color:#000;
+    margin-bottom: 50px;
+  }
