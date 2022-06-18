@@ -1,211 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../CSS files/bootstrap.min.css">
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../CSS files/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS files/owl.carousel.min.css">
+  <link rel="stylesheet" href="../CSS files/owl.theme.default.min.css">
+  <style>
+    .name {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      width: 370px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .price {
+      background-color: #fff;
+      text-align: center;
+      width: 370px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-bottom: 2px;
+    }
+
+    .plans p{
+      text-align: center;
+      background-color: #fff;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      width: 370px;
+      margin-bottom: 2px;
+    }
+
+    .switch {
+      background-color: #fff;
+      text-align: center;
+      margin-bottom:2px;
+      width: 370px;
+    }
+  </style>
 </head>
+
 <body>
-   
-<!------ Include the above in your HEAD tag ---------->
-<style>
-    .plans .card {
-  border: none;
-  border-radius: 1rem;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-}
 
-.plans hr {
-  margin: 1.5rem 0;
-}
-
-.plans .card-title {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-}
-
-.plans .card-price {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.plans .card-price .period {
-  font-size: 0.8rem;
-}
-
-.plans ul li {
-  margin-bottom: 1rem;
-}
-
-.plans .text-muted {
-  opacity: 0.7;
-}
-
-.plans .btn {
-  font-size: 90%;
-  border-radius: 1rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.plans .btn-menu {
-  width: 150px;
-  font-size: 90%;
-  border-radius: 1rem;
-  letter-spacing: .1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
- 
-}
-
-.plans button:focus {
-  outline: 1px dotted;
-  outline: 0px auto -webkit-focus-ring-color;
-}
-</style>
-
-<div class="container plans" style="background-color: #f2f3f5;">
-    
-	<div class="row">
-        <div class="col-md-10 offset-md-1 text-center py-2">
-            <h2>Meet our plans</h2>
+  <div class="container-fluid" style="background-color:#f2f3f5 ; padding-top:100px; padding-bottom: 100px;">
+    <div class="row">
+      <div class="row-col col-3 mx-auto">
+        <div class="name">
+          <h2>weekly</h2>
         </div>
-    </div>
-    
-    <div class="row justify-content-center py-2">
-        <ul class="nav justify-content-center">
-            <li class="nav-item px-3">
-                <button class="btn-menu btn-primary btn-lg btn-block active" role="button" onclick="costoMensual()" id="btn-status1">Monthly</button>
-            </li>
-            <li class="nav-item px-3">
-                <button class="btn-menu btn-primary btn-lg btn-block" role="button" onclick="costoTrimestral()" id="btn-status2">Quarterly</button>
-            </li>
-            <li class="nav-item px-3">
-                <button class="btn-menu btn-primary btn-lg btn-block" role="button" onclick="costoSemestral()" id="btn-status3">Biannual</button>
-            </li>
-            <li class="nav-item px-3">
-                <button class="btn-menu btn-primary btn-lg btn-block" role="button" onclick="costoAnual()" id="btn-status4">Annual</button>
-            </li>
-        </ul>
-    </div>
-    
-    <div class="row justify-content-center py-4">
-        
-        <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Start Up</h5>
-                    <h6 class="card-price text-center" id="costo1">rasool</h6>
-                    <hr>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Curabitur id efficitur ligula</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Donec congue ac mauris vitae condimentum</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Cras sed diam urna</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Morbi rhoncus libero justo</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Sed sed diam porta, interdum risus nec</li>
-                    </ul>
-                    <a href="#" class="btn btn-block btn-primary text-uppercase">Contact Us</a>
-                </div>
-            </div>
+        <div class="price">
+          <h2>$2000000</h2>
         </div>
-        
-        <!-- Tier two -->
-        <div class="col-lg-4">
-            <div class="card mb-5 mb-lg-0">
-                <div class="card-body">
-                    <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-                    <h6 class="card-price text-center" id="costo2">rahul madarchod</h6>
-                    <hr>
-                    <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Lorem ipsum dolor sit amet</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Curabitur id efficitur ligula</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Donec congue ac mauris vitae condimentum</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Cras sed diam urna</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Morbi rhoncus libero justo</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Sed sed diam porta, interdum risus nec</li>
-                    </ul>
-                    <a href="#" class="btn btn-block btn-primary text-uppercase">Contact Us</a>
-                </div>
-            </div>
+        <div class="plans">
+          <p>sbsbdjbsjbd</p>
+          <p>bshbslhbsjd</p>
+          <p>dnkjnsndchb</p>
+          <p>sbsbdjbsjbd</p>
+          <p>bshbslhbsjd</p>
+          <p>dnkjnsndchb</p>
         </div>
-        
+        <div class="switch">
+          <button style="text-align:center; background-color:#0dace6d7 ; color: #fff; border-radius:8px;">buy
+            now</button>
+        </div>
+      </div>
+      <div class="row-col col-3 mx-auto">
+        <div class="name">
+          <h2>weekly</h2>
+        </div>
+        <div class="price">
+          <h2>$2000000</h2>
+        </div>
+        <div class="plans">
+          <p>sbsbdjbsjbd</p>
+          <p>bshbslhbsjd</p>
+          <p>dnkjnsndchb</p>
+          <p>sbsbdjbsjbd</p>
+          <p>bshbslhbsjd</p>
+          <p>dnkjnsndchb</p>
+        </div>
+        <div class="switch">
+          <button style="text-align:center; background-color:#0dace6d7 ; color: #fff; border-radius:8px;">buy
+            now</button>
+        </div>
+      </div>
+      <div class="row-col col-3 mx-auto">
+        <div class="name">
+          <h2>weekly</h2>
+        </div>
+        <div class="price">
+          <h2>$2000000</h2>
+        </div>
+        <div class="plans">
+          <p>sbsbdjbsjbd</p>
+          <p>bshbslhbsjd</p>
+          <p>dnkjnsndchb</p>
+          <p>sbsbdjbsjbd</p>
+          <p>bshbslhbsjd</p>
+          <p>dnkjnsndchb</p>
+        </div>
+        <div class="switch">
+          <button style="text-align:center; background-color:#0dace6d7 ; color: #fff; border-radius:8px;">buy
+            now</button>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+  <div class="slider">
+    <div class="owl-carousel">
+      <div class="lol">
+        <h1>hsddfskjvhfs;vhkj;vvkj</h1>
+        <h3>vffbbf m,bhhfbv x.mv.x. vvmhv.mnbvjh.vmsbbjlv.mv <br>
+          kjjdjkfdfkj/ldmdmldvmkndv,nkjdsv/ <br>
+          nbcldh;kkzjojcojoijoci</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script>
-        function costoMensual(){
-  document.getElementById("costo1").innerHTML = "$6,500";
-  document.getElementById("costo2").innerHTML = "$8,500";
-  var element = document.getElementById("btn-status1");
-  element.classList.add("active");
-  //demas botones
-  var element1 = document.getElementById("btn-status2");
-  element1.classList.remove("active");
-  var element2 = document.getElementById("btn-status3");
-  element2.classList.remove("active");
-  var element3 = document.getElementById("btn-status4");
-  element3.classList.remove("active");
-}
-
-function costoTrimestral(){
-  document.getElementById("costo1").innerHTML = "rahu er buir";
-  document.getElementById("costo2").innerHTML = "raul er buir";
-  var element = document.getElementById("btn-status2");
-  element.classList.add("active");
-  //demas botones
-  var element1 = document.getElementById("btn-status1");
-  element1.classList.remove("active");
-  var element2 = document.getElementById("btn-status3");
-  element2.classList.remove("active");
-  var element3 = document.getElementById("btn-status4");
-  element3.classList.remove("active");
-}
-
-function costoSemestral(){
-  document.getElementById("costo1").innerHTML = "$33,150";
-  document.getElementById("costo2").innerHTML = "$43,350";
-  var element = document.getElementById("btn-status3");
-  element.classList.add("active");
-  //demas botones
-  var element1 = document.getElementById("btn-status1");
-  element1.classList.remove("active");
-  var element2 = document.getElementById("btn-status2");
-  element2.classList.remove("active");
-  var element3 = document.getElementById("btn-status4");
-  element3.classList.remove("active");
-}
-
-function costoAnual(){
-  document.getElementById("costo1").innerHTML = "rahul madarchod";
-  document.getElementById("costo2").innerHTML = "laura";
-  var element = document.getElementById("btn-status4");
-  element.classList.add("active");
-  //demas botones
-  var element1 = document.getElementById("btn-status1");
-  element1.classList.remove("active");
-  var element2 = document.getElementById("btn-status2");
-  element2.classList.remove("active");
-  var element3 = document.getElementById("btn-status3");
-  element3.classList.remove("active");
-}
-    </script>
+  <script src="../javascript Files/owl.carousel.min.js"></script>
+  <script src="./slick.js"></script>
 </body>
+</body>
+
 </html>
