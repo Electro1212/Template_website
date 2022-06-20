@@ -28,11 +28,11 @@
   }
 
   .content h1 {
-    font-size: 84pt;
+    font-size: 60pt;
   }
 
   .content p {
-    font-size: 24pt;
+    font-size: 20pt;
   }
 
   .content button {
@@ -122,8 +122,8 @@
     color: #fff;
     text-align: center;
     margin-bottom: 2px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 
   .price {
@@ -132,8 +132,8 @@
     color: gray;
     text-align: center;
     margin-bottom: 2px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .providing p {
@@ -142,16 +142,17 @@
     color: gray;
     text-align: center;
     margin-bottom: 2px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .switch {
     width: 369px;
     background-color: rgb(212, 226, 238);
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom:30px;
   }
 
   .switch button {
@@ -159,7 +160,7 @@
     border: 1px solid rgb(212, 226, 238);
     background-color: #404040;
     color: #fff;
-    padding: 15px 40px 15px 40px;
+    padding: 10px 35px 10px 35px;
   }
 
   .item {
@@ -185,3 +186,9 @@
   .contact-form {
     margin-top: 70px;
   }
+  #lolta{
+    padding-left:50px;
+    padding-right:50px;
+    margin-left:57%;
+  }
+  
