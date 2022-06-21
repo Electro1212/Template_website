@@ -5,11 +5,23 @@
   .nav-item {
     margin-right: 15px;
     font-size: 15px;
+    transition: ease-out 0.3s;
+    position: relative;
+    padding: 0 10px;
+  }
+  .nav-item:after {
+    position: absolute;
+    content: "";
+    background-color: #0dace6d7;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
   }
 
-  .nav-item .nav-link:hover {
-    border-bottom: 4px solid #0dace6d7;
-    animation: none;
+  .nav-item:hover:after {
+     width: 100%;
   }
 
   .content {
