@@ -36,6 +36,3 @@ jobs:
       #   run: deno fmt --check
 
      
-
-      - name: Run tests
-        run: deno test -A --unstable
